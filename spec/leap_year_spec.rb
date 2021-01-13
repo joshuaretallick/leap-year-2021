@@ -14,4 +14,8 @@ describe "#leapyear method" do
     expect(leapyear(804)).to eq true
   end
 
+  it "returns false when leapyear is NOT divisible by 4" do
+    expect(leapyear(6)).to eq false
+  end
+
 end
