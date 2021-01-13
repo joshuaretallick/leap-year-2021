@@ -10,4 +10,8 @@ describe "#leapyear method" do
     expect(leapyear(600)).to eq false
   end
 
+  it "returns true when leapyear is divisible by 4 but NOT by 100" do
+    expect(leapyear(804)).to eq true
+  end
+
 end
